@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name=“author” content="Carelle Mulawa-Richards">
+    <meta name=“description” content="Learn all about the eight planets of our solar system.">
+    <meta name=“keywords” content="space, planets, solar system, galaxy">
+    <title>Cosmos Agency</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg"> <!-- Figure 26. Magic Planets Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> <!-- Boostrap (n.d.-a) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!-- Boostrap (n.d.-a) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.5.2/cdn/themes/light.css"> <!-- Shoelace (n.d.) -->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"> <!-- Splide (n.d.) -->
+    <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" rel="stylesheet"> <!-- Locomotive (n.d.) -->
+    <link rel="stylesheet" href="style.css"> <!-- Website stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&display=swap" rel="stylesheet"> <!-- Gama and Mientjes (n.d.) -->
+</head>
+
+<body data-scroll-container>
+    <header class="shadow">
+        <!-- Navigation area -->
+        <nav class="row p-4 mx-auto align-items-center navbar navbar-expand-md">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <div class="col-4">
+                    <a href="javascript:window.location.reload();"><img class="logo" src="images/logo-planet-2.png" alt="Cosmos Agency logo"></a> <!-- Figure 26. Magic Planets Icons -->
+                </div>
+                <!-- Planet dropdown menu -->
+                <div class="col-4">
+                    <div class="planet-picker">
+                        <span class="my-auto">Explore</span>
+                        <div class="dropdown ms-4">
+                            <button class="btn dropdown-toggle planet-picker-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select a planet</button>
+                            <ul class="dropdown-menu planet-picker-dropdown">
+                                <li><a class="dropdown-item" href="#mercury">Mercury</a></li>
+                                <li><a class="dropdown-item" href="#venus">Venus</a></li>
+                                <li><a class="dropdown-item" href="#earth">Earth</a></li>
+                                <li><a class="dropdown-item" href="#mars">Mars</a></li>
+                                <li><a class="dropdown-item" href="#jupiter">Jupiter</a></li>
+                                <li><a class="dropdown-item" href="#saturn">Saturn</a></li>
+                                <li><a class="dropdown-item" href="#uranus">Uranus</a></li>
+                                <li><a class="dropdown-item" href="#neptune">Neptune</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile hamburger button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <!-- Mobile close menu button -->
+                    <div class="offcanvas-header">
+                        <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Select a planet</h2>
+                        <button type="button" class="btn-close ms-auto me-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ms-auto">
+                        <!-- Mobile planet menu -->
+                        <ul class="planet-picker-mobile">
+                            <li><a href="#mercury">Mercury</a></li>
+                            <li><a href="#venus">Venus</a></li>
+                            <li><a href="#earth">Earth</a></li>
+                            <li><a href="#mars">Mars</a></li>
+                            <li><a href="#jupiter">Jupiter</a></li>
+                            <li><a href="#saturn">Saturn</a></li>
+                            <li><a href="#uranus">Uranus</a></li>
+                            <li><a href="#neptune">Neptune</a></li>
+                        </ul>
+                        <!-- Quiz button -->
+                        <div class=" text-end">
+                            <a class="btn btn-gradient" href="#planet-quiz">Planet quiz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Cosmos Agency homepage</h1>
+        <!-- Full screen hero area -->
+        <section class="hero" data-scroll-section>
+            <div class="hero-content" data-scroll data-scroll-delay="0.1" data-scroll-speed="8">
+                <h2 id="hero-text">Learn about the eight planets of our solar system</h2>
+                <img class="down-arrow" src="images/arrow-down.png" alt="Image of an arrow pointing downwards"> <!-- Figure 2. Arrow Down -->
+            </div>
+        </section>
+        <div class="container main-content">
+            <!-- Mercury section -->
+            <section id="mercury" class="row g-5" data-scroll-section>
+                <div class="col-lg-6 align-self-center content-col" data-scroll data-scroll-delay="0.18" data-scroll-speed="3">
+                    <!-- Written content sourced from NASA (2023a) -->
+                    <h2>Mercury</h2>
+                    <p class="mb-5">Mercury is just marginally larger than Earth's moon, making it our smallest planet.
+                        Despite being the closest planet to the Sun, its surface experiences extreme temperature variations
+                        due to its lack of atmosphere.</p>
+                    <div class="row">
+                        <dl class="col-6">
+                            <dt>Length of year</dt>
+                            <dd>88 days</dd>
+                            <dt>Distance from Sun</dt>
+                            <dd>58 million km</dd>
+                        </dl>
+                        <dl class="col-6">
+                            <dt>Planet type</dt>
+                            <dd>Terrestrial</dd>
+                            <dt>Moons</dt>
+                            <dd>0</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-6 image-col" data-scroll data-scroll-delay="0.08" data-scroll-speed="3">
+                    <div id="mercury-carousel" class="splide" role="group">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="images/mercury-1.jpg" alt="Image of Mercury"></li> <!-- Figure 3. Colors of the Innermost Planet: View 1 -->
+                                <li class="splide__slide"><img src="images/mercury-2.jpg" alt="Image of Mercury's Caloris Basin"></li> <!-- Figure 4. Mercury's Caloris Basin -->
+                            </ul>
+                        </div>
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev"><i class="bi bi-arrow-left"></i></button> <!-- Figure 24. Arrow Left -->
+                            <button class="splide__arrow splide__arrow--next"><i class="bi bi-arrow-right"></i></button> <!-- Figure 25. Arrow Right -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Venus section -->
+            <section id="venus" class="row g-5" data-scroll-section>
+                <div class="col-lg-6" data-scroll data-scroll-delay="0.18" data-scroll-speed="3">
+                    <div id="venus-carousel" class="splide" role="group">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="images/venus-1.jpg" alt="Images of Venus"></li> <!-- Figure 5. Venus - Computer Simulated Global View of the Northern Hemisphere -->
+                                <li class="splide__slide"><img src="images/venus-2.jpg" alt="Image of Sapas Mons on Venus"></li> <!-- Figure 6. Venus - 3-D Perspective View of Sapas Mons -->
+                            </ul>
+                        </div>
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev"><i class="bi bi-arrow-left"></i></button> <!-- Figure 24. Arrow Left -->
+                            <button class="splide__arrow splide__arrow--next"><i class="bi bi-arrow-right"></i></button> <!-- Figure 25. Arrow Right -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center" data-scroll data-scroll-delay="0.08" data-scroll-speed="3">
+                    <!-- Written content sourced from NASA (2023b) -->
+                    <h2>Venus</h2>
+                    <p class="mb-5">Venus is similar in size to Earth. It has a toxic atmosphere of carbon dioxide with
+                        thick sulfuric acid clouds. Although Mercury is closer to the Sun, the temperature on Venus is
+                        about 475 degrees Celsius, making it our hottest planet.</p>
+                    <div class="row">
+                        <dl class="col-6">
+                            <dt>Length of year</dt>
+                            <dd>225 days</dd>
+                            <dt>Distance from Sun</dt>
+                            <dd>108 million km</dd>
+                        </dl>
+                        <dl class="col-6">
+                            <dt>Planet type</dt>
+                            <dd>Terrestrial</dd>
+                            <dt>Moons</dt>
+                            <dd>0</dd>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+            <!-- Earth section -->
+            <section id="earth" class="row g-5" data-scroll-section>
+                <div class="col-lg-6 align-self-center content-col" data-scroll data-scroll-delay="0.18" data-scroll-speed="3">
+                    <!-- Written content sourced from NASA (2023c) -->
+                    <h2>Earth</h2>
+                    <p class="mb-5">Earth is our home and the third planet from the Sun. It is a remarkable oasis of
+                        life in the vastness of space. Earth is unique as it's the only planet we know of that is
+                        inhabited by life and the only planet with water on its surface.</p>
+                    <div class="row">
+                        <dl class="col-6">
+                            <dt>Length of year</dt>
+                            <dd>365 days</dd>
+                            <dt>Distance from Sun</dt>
+                            <dd>150 million km</dd>
+                        </dl>
+                        <dl class="col-6">
+                            <dt>Planet type</dt>
+                            <dd>Terrestrial</dd>
+                            <dt>Moons</dt>
+                            <dd>1</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-6 image-col" data-scroll data-scroll-delay="0.08" data-scroll-speed="3">
+                    <div id="earth-carousel" class="splide" role="group">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="images/earth-1.jpg" alt="Image of Earth"></li> <!-- Figure 7. Earth with Clouds Above the African Continent -->
+                                <li class="splide__slide"><img src="images/earth-2.jpg" alt="Image of Earth and a satellite"></li> <!-- Figure 8. View of Earth and Satellite -->
+                            </ul>
+                        </div>
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev"><i class="bi bi-arrow-left"></i></button> <!-- Figure 24. Arrow Left -->
+                            <button class="splide__arrow splide__arrow--next"><i class="bi bi-arrow-right"></i></button> <!-- Figure 25. Arrow Right -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Mars section -->
+            <section id="mars" class="row g-5" data-scroll-section>
+                <div class="col-lg-6" data-scroll data-scroll-delay="0.18" data-scroll-speed="3">
+                    <div id="mars-carousel" class="splide" role="group">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="images/mars-1.jpg" alt="Image of Mars"></li> <!-- Figure 9. Mars on a Black Background -->
+                                <li class="splide__slide"><img src="images/mars-2.jpg" alt="Image of a Polar Cliff on Mars"></li> <!-- Figure 10. Springtime on a Polar Cliff -->
+                            </ul>
+                        </div>
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev"><i class="bi bi-arrow-left"></i></button> <!-- Figure 24. Arrow Left -->
+                            <button class="splide__arrow splide__arrow--next"><i class="bi bi-arrow-right"></i></button> <!-- Figure 25. Arrow Right -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center" data-scroll data-scroll-delay="0.08" data-scroll-speed="3">
+                    <!-- Written content sourced from NASA (2023d) -->
+                    <h2>Mars</h2>
+                    <p class="mb-5">Mars, also known as the “Red Planet”, consists of towering volcanoes, expansive valleys
+                        and polar ice caps. With an atmosphere composed of mainly carbon dioxide, Mars is the only planet we
+                        explored with rovers.</p>
+                    <div class="row">
+                        <dl class="col-6">
+                            <dt>Length of year</dt>
+                            <dd>687 days</dd>
+                            <dt>Distance from Sun</dt>
+                            <dd>228 million km</dd>
+                        </dl>
+                        <dl class="col-6">
+                            <dt>Planet type</dt>
+                            <dd>Terrestrial</dd>
+                            <dt>Moons</dt>
+                            <dd>2</dd>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+            <!-- Jupiter section -->
+            <section id="jupiter" class="row g-5" data-scroll-section>
+                <div class="col-lg-6 align-self-center content-col" data-scroll data-scroll-delay="0.18" data-scroll-speed="3">
+                    <!-- Written content sourced from NASA (2023e) -->
+                    <h2>Jupiter</h2>
+                    <p class="mb-5">Jupiter is our largest planet. Its iconic Great Red Spot is a massive storm system larger than
+                        Earth. Consisting of mostly of hydrogen and helium, Jupiter's atmosphere harbours a complex weather system
+                        featuring vortices and intricate cloud patterns.</p>
+                    <div class="row">
+                        <dl class="col-6">
+                            <dt>Length of year</dt>
+                            <dd>4,333 days</dd>
+                            <dt>Distance from Sun</dt>
+                            <dd>778 million km</dd>
+                        </dl>
+                        <dl class="col-6">
+                            <dt>Planet type</dt>
+                            <dd>Gas giant</dd>
+                            <dt>Moons</dt>
+                            <dd>75</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-6 image-col" data-scroll data-scroll-delay="0.08" data-scroll-speed="3">
+                    <div id="jupiter-carousel" class="splide" role="group">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="images/jupiter-1.jpg" alt="Image of Jupiter"></li> <!-- Figure 11. Hubble's New Portrait of Jupiter -->
+                                <li class="splide__slide"><img src="images/jupiter-2.jpg" alt="Image of Jupiter's Great Red Spot"></li> <!-- Figure 12. Jupiter's Great Red Spot in True Color -->
+                            </ul>
+                        </div>
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev"><i class="bi bi-arrow-left"></i></button> <!-- Figure 24. Arrow Left -->
+                            <button class="splide__arrow splide__arrow--next"><i class="bi bi-arrow-right"></i></button> <!-- Figure 25. Arrow Right -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Saturn section -->
+            <section id="saturn" class="row g-5" data-scroll-section>
+                <div class="col-lg-6" data-scroll data-scroll-delay="0.18" data-scroll-speed="3">
+                    <div id="saturn-carousel" class="splide" role="group">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="images/saturn-1.jpg" alt="Image of Saturn"></li> <!-- Figure 13. Colorful Colossuses and Changing Hues -->
+                                <li class="splide__slide"><img src="images/saturn-2.jpg" alt="Image of Saturn’s rings during equinox"></li> <!-- Figure 14. The Rite of Spring -->
+                            </ul>
+                        </div>
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev"><i class="bi bi-arrow-left"></i></button> <!-- Figure 24. Arrow Left -->
+                            <button class="splide__arrow splide__arrow--next"><i class="bi bi-arrow-right"></i></button> <!-- Figure 25. Arrow Right -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center" data-scroll data-scroll-delay="0.08" data-scroll-speed="3">
+                    <!-- Written content sourced from NASA (2023f) -->
+                    <h2>Saturn</h2>
+                    <p class="mb-5">Saturn is our solar system's second-largest planet. It has seven magnificent rings
+                        made of icy particles and debris. Saturn isn't able to support life. However, its moons,
+                        Enceladus and Titan, have subsurface oceans and other elements conducive to life.</p>
+                    <div class="row">
+                        <dl class="col-6">
+                            <dt>Length of year</dt>
+                            <dd>10,759 days</dd>
+                            <dt>Distance from Sun</dt>
+                            <dd>1.4 billion km</dd>
+                        </dl>
+                        <dl class="col-6">
+                            <dt>Planet type</dt>
+                            <dd>Gas giant</dd>
+                            <dt>Moons</dt>
+                            <dd>53</dd>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+            <!-- Uranus section -->
+            <section id="uranus" class="row g-5" data-scroll-section>
+                <div class="col-lg-6 align-self-center content-col" data-scroll data-scroll-delay="0.18" data-scroll-speed="3">
+                    <!-- Written content sourced from NASA (2023g) -->
+                    <h2>Uranus</h2>
+                    <p class="mb-5">Uranus stands out for its unusual feature — the planet rotates on its side. As a result,
+                        Uranus experiences extreme seasons lasting about 20 years. Uranus has a blue-green colouration,
+                        attributed to the absorption and scattering of sunlight by its methane atmosphere.</p>
+                    <div class="row">
+                        <dl class="col-6">
+                            <dt>Length of year</dt>
+                            <dd>30,687 days</dd>
+                            <dt>Distance from Sun</dt>
+                            <dd>2.9 billion km</dd>
+                        </dl>
+                        <dl class="col-6">
+                            <dt>Planet type</dt>
+                            <dd>Ice giant</dd>
+                            <dt>Moons</dt>
+                            <dd>27</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-6 image-col" data-scroll data-scroll-delay="0.08" data-scroll-speed="3">
+                    <div id="uranus-carousel" class="splide" role="group">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="images/uranus-1.jpg" alt="Image of Uranus"></li> <!-- Figure 15. Uranus as seen by NASA's Voyager 2 -->
+                                <li class="splide__slide"><img src="images/uranus-2.jpg" alt="Image showing crescent Uranus"></li> <!-- Figure 16. Color Voyager 2 Image Showing Crescent Uranus -->
+                            </ul>
+                        </div>
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev"><i class="bi bi-arrow-left"></i></button> <!-- Figure 24. Arrow Left -->
+                            <button class="splide__arrow splide__arrow--next"><i class="bi bi-arrow-right"></i></button> <!-- Figure 25. Arrow Right -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Neptune section -->
+            <section id="neptune" class="row g-5" data-scroll-section>
+                <div class="col-lg-6" data-scroll data-scroll-delay="0.18" data-scroll-speed="3">
+                    <div id="neptune-carousel" class="splide" role="group">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="images/neptune-1.jpg" alt="Image of Neptune"></li> <!-- Figure 17. Neptune on a Black Background -->
+                                <li class="splide__slide"><img src="images/neptune-2.jpg" alt="Image of Neptune by Voyager 2"></li> <!-- Figure 18. Neptune -->
+                            </ul>
+                        </div>
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev"><i class="bi bi-arrow-left"></i></button> <!-- Figure 24. Arrow Left -->
+                            <button class="splide__arrow splide__arrow--next"><i class="bi bi-arrow-right"></i></button> <!-- Figure 25. Arrow Right -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center" data-scroll data-scroll-delay="0.08" data-scroll-speed="3">
+                    <!-- Written content sourced from NASA (2023h) -->
+                    <h2>Neptune</h2>
+                    <p class="mb-5">Neptune is the most distant planet in our solar system, and it's the only planet
+                        we can't see with our naked eye. Neptune is approximately 17 times the mass of Earth, and
+                        it's atmosphere is dominated by hydrogen, helium and traces of methane.</p>
+                    <div class="row">
+                        <dl class="col-6">
+                            <dt>Length of year</dt>
+                            <dd>60,190 days</dd>
+                            <dt>Distance from Sun</dt>
+                            <dd>4.5 billion km</dd>
+                        </dl>
+                        <dl class="col-6">
+                            <dt>Planet type</dt>
+                            <dd>Ice giant</dd>
+                            <dt>Moons</dt>
+                            <dd>14</dd>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+            <!-- Planet quiz section -->
+            <section id="planet-quiz" class="g-5" data-scroll-section>
+                <div class="background-panel" data-scroll data-scroll-delay="0.08" data-scroll-speed="3">
+                    <!-- Tab 0 -->
+                    <div class="tab">
+                        <div class="row g-0">
+                            <div class="col-lg-7">
+                                <div class="panel-content">
+                                    <h2>Planet quiz</h2>
+                                    <p class="accent">Are you ready to reach for the stars and prove yourself as a celestial scholar?</p>
+                                    <p>You've just journeyed through a galaxy of captivating information about our planet's solar system.
+                                        Now, it's time to discover how much you've learned with our planet quiz.</p>
+                                    <button type="button" onclick="nextPreviousTab(1)" class="btn btn-gradient mt-5">Begin</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 p-0">
+                                <img class="quiz-image" src="images/astronaut.jpg" alt="Image of an astronaut floating in space"> <!-- Figure 19. Astronaut in Spacesuit Floating in Space -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Quiz question area -->
+                    <div id="quiz-question-area" class="panel-content">
+                        <h2 class="mb-5">Planet quiz</h2>
+                        <dl class="row quiz-progress">
+                            <dt id="quiz-progress-text" class="col-8"></dt>
+                            <dd id="quiz-percentage-complete" class="col-4 text-end"></dd>
+                        </dl>
+                        <sl-progress-bar id="quiz-progress-bar" value="" label="Quiz progress"></sl-progress-bar>
+                        <!-- Tab 1 -->
+                        <div class="tab">
+                            <p class="mb-4 mt-5 accent">Which is the largest planet in our solar system?</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="radio" class="btn-check" name="q0" id="q0-a" value="Uranus">
+                                    <label class="btn quiz-radio btn-primary" for="q0-a"><span class="quiz-letter">A.</span>Uranus</label>
+                                    <input type="radio" class="btn-check" name="q0" id="q0-b" value="Neptune">
+                                    <label class="btn quiz-radio btn-primary" for="q0-b"><span class="quiz-letter">B.</span>Neptune</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="radio" class="btn-check" name="q0" id="q0-c" value="Earth">
+                                    <label class="btn quiz-radio btn-primary" for="q0-c"><span class="quiz-letter">C.</span>Earth</label>
+                                    <input type="radio" class="btn-check" name="q0" id="q0-d" value="Jupiter">
+                                    <label class="btn quiz-radio btn-primary" for="q0-d"><span class="quiz-letter">D.</span>Jupiter</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tab 2 -->
+                        <div class="tab">
+                            <p class="mb-4 mt-5 accent">Which is the smallest planet in our solar system?</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="radio" class="btn-check" name="q1" id="q1-a" value="Earth">
+                                    <label class="btn quiz-radio btn-primary" for="q1-a"><span class="quiz-letter">A.</span>Earth</label>
+                                    <input type="radio" class="btn-check" name="q1" id="q1-b" value="Mercury">
+                                    <label class="btn quiz-radio btn-primary" for="q1-b"><span class="quiz-letter">B.</span>Mercury</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="radio" class="btn-check" name="q1" id="q1-c" value="Mars">
+                                    <label class="btn quiz-radio btn-primary" for="q1-c"><span class="quiz-letter">C.</span>Mars</label>
+                                    <input type="radio" class="btn-check" name="q1" id="q1-d" value="Venus">
+                                    <label class="btn quiz-radio btn-primary" for="q1-d"><span class="quiz-letter">D.</span>Venus</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tab 3 -->
+                        <div class="tab">
+                            <p class="mb-4 mt-5 accent">Which planet is the hottest?</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="radio" class="btn-check" name="q2" id="q2-a" value="Neptune">
+                                    <label class="btn quiz-radio btn-primary" for="q2-a"><span class="quiz-letter">A.</span>Neptune</label>
+                                    <input type="radio" class="btn-check" name="q2" id="q2-b" value="Venus">
+                                    <label class="btn quiz-radio btn-primary" for="q2-b"><span class="quiz-letter">B.</span>Venus</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="radio" class="btn-check" name="q2" id="q2-c" value="Mars">
+                                    <label class="btn quiz-radio btn-primary" for="q2-c"><span class="quiz-letter">C.</span>Mars</label>
+                                    <input type="radio" class="btn-check" name="q2" id="q2-d" value="Mercury">
+                                    <label class="btn quiz-radio btn-primary" for="q2-d"><span class="quiz-letter">D.</span>Mercury</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tab 4 -->
+                        <div class="tab">
+                            <p class="mb-4 mt-5 accent">Which planet has the most moons?</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="radio" class="btn-check" name="q3" id="q3-a" value="Jupiter">
+                                    <label class="btn quiz-radio btn-primary" for="q3-a"><span class="quiz-letter">A.</span>Jupiter</label>
+                                    <input type="radio" class="btn-check" name="q3" id="q3-b" value="Mercury">
+                                    <label class="btn quiz-radio btn-primary" for="q3-b"><span class="quiz-letter">B.</span>Mercury</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="radio" class="btn-check" name="q3" id="q3-c" value="Saturn">
+                                    <label class="btn quiz-radio btn-primary" for="q3-c"><span class="quiz-letter">C.</span>Saturn</label>
+                                    <input type="radio" class="btn-check" name="q3" id="q3-d" value="Mars">
+                                    <label class="btn quiz-radio btn-primary" for="q3-d"><span class="quiz-letter">D.</span>Mars</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tab 5 -->
+                        <div class="tab">
+                            <p class="mb-4 mt-5 accent">Which planet rotates on its side?</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="radio" class="btn-check" name="q4" id="q4-a" value="Uranus">
+                                    <label class="btn quiz-radio btn-primary" for="q4-a"><span class="quiz-letter">A.</span>Uranus</label>
+                                    <input type="radio" class="btn-check" name="q4" id="q4-b" value="Saturn">
+                                    <label class="btn quiz-radio btn-primary" for="q4-b"><span class="quiz-letter">B.</span>Saturn</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="radio" class="btn-check" name="q4" id="q4-c" value="Venus">
+                                    <label class="btn quiz-radio btn-primary" for="q4-c"><span class="quiz-letter">C.</span>Venus</label>
+                                    <input type="radio" class="btn-check" name="q4" id="q4-d" value="Neptune">
+                                    <label class="btn quiz-radio btn-primary" for="q4-d"><span class="quiz-letter">D.</span>Neptune</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Quiz navigation buttons -->
+                        <div class="row mt-5">
+                            <div class="col-sm-6">
+                                <button type="button" onclick="nextPreviousTab(-1)" class="btn btn-gradient">Previous</button>
+                            </div>
+                            <div class="col-sm-6 text-end">
+                                <button type="button" id="next-button" onclick="nextPreviousTab(1)" class="btn btn-gradient">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 6 -->
+                    <div class="tab">
+                        <div class="row g-0">
+                            <div class="col-lg-7 align-self-center">
+                                <div class="panel-content">
+                                    <h2>Planet quiz</h2>
+                                    <p class="accent">You scored <span id="quiz-percent-correct"></span>%.</p>
+                                    <p id="quiz-results-text"></p>
+                                    <button type="button" onclick="reset()" class="btn btn-gradient mt-5">Reset</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 p-0">
+                                <img class="quiz-image" src="images/moon.jpg" alt="Image of a full moon"> <!-- Figure 20. Full Moon -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Quiz dialog box -->
+            <sl-dialog label="Please confirm" class="dialog-overview">
+                Are you sure you want to submit your answers to the quiz?
+                <sl-button class="gradient-outline" slot="footer" id="close-button" variant="primary">Close</sl-button>
+                <sl-button slot="footer" id="ok-button" variant="primary">OK</sl-button>
+            </sl-dialog>
+        </div>
+    </main>
+    <!-- Footer area -->
+    <footer class="container text-center mb-5" data-scroll-section>
+        <!-- Social media -->
+        <a class="social-icons fa-stack fa-2x" href="https://www.facebook.com/" target="_blank">
+            <i class="fa-solid fa-circle fa-stack-2x"></i>
+            <sl-tooltip content="Facebook" distance="14">
+                <i class="fa-brands fa-facebook-f fa-stack-1x fa-inverse"></i> <!-- Figure 21. Facebook-f -->
+            </sl-tooltip>
+            <span class="screen-reader-only">Facebook</span>
+        </a>
+        <a class="social-icons fa-stack fa-2x" href="https://www.instagram.com/" target="_blank">
+            <i class="fa-solid fa-circle fa-stack-2x"></i>
+            <sl-tooltip content="Instagram" distance="14">
+                <i class="fa-brands fa-instagram fa-stack-1x fa-inverse"></i> <!-- Figure 22. Instagram -->
+            </sl-tooltip>
+            <span class="screen-reader-only">Instagram</span>
+        </a>
+        <a class="social-icons fa-stack fa-2x" href="https://twitter.com/" target="_blank">
+            <i class="fa-solid fa-circle fa-stack-2x"></i>
+            <sl-tooltip content="Twitter" distance="14">
+                <i class="fa-brands fa-twitter fa-stack-1x fa-inverse"></i> <!-- Figure 23. Twitter -->
+            </sl-tooltip>
+            <span class="screen-reader-only">Twitter</span>
+        </a>
+        <p class="disclaimer mx-4">This website has been created as part of an assignment in an approved course of study
+            for Curtin University and contains copyright material not created by the author. All copyright material used
+            remains copyright of the respective owners and has been used here pursuant to Section 40 of the Copyright Act
+            1968 (Commonwealth of Australia). No part of this work may be reproduced without consent of the original
+            copyright owners. See code comments for references.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script> <!-- Splide (n.d.) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script> <!-- Boostrap (n.d.-a) -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.5.2/cdn/shoelace-autoloader.js"></script> <!-- Shoelace (n.d.) -->
+    <script src="https://kit.fontawesome.com/fcea8451ee.js" crossorigin="anonymous"></script> <!-- FontAwesome (n.d.) -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script> <!-- Locomotive (n.d.) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> <!-- Anime (n.d.) -->
+    <script src="main.js"></script> <!-- Website JavaScript -->
+</body>
+<!--
+    REQUIRED ELEMENTS
+
+    Shoelace UI Components:
+    - Dialog (quiz)
+    - Progress bar (quiz)
+    - Tooltip (social media)
+
+    Image gallery:
+    - Carousel/slideshow (planet sections)
+
+    Animation:
+    - CSS animation (arrow in hero section)
+
+    Scroll interaction:
+    - Locomotive Scroll (planet and quiz sections)
+
+
+    LIST OF FIGURES
+
+    Figure 1. Manny Becerra, Black and White Starry Night. 2021, Digital Image. Reproduced from: Unsplash. CC0.
+
+    Figure 2. Boostrap, Arrow Down. n.d.-b, Digital Image. Reproduced from: Bootstrap. CC BY 3.0.
+
+    Figure 3. NASA, Colors of the Innermost Planet: View 1. 2018a, Digital Image. Reproduced from: NASA. CC BY 4.0. 
+
+    Figure 4. NASA, Mercury's Caloris Basin. 2019b, Digital Image. Reproduced from: NASA. CC BY 4.0. 
+
+    Figure 5. NASA, Venus - Computer Simulated Global View of the Northern Hemisphere. 2018c, Digital Image. Reproduced from: NASA. CC BY 4.0.
+    
+    Figure 6. NASA, Venus - 3-D Perspective View of Sapas Mons. 2018b, Digital Image. Reproduced from: NASA. CC BY 4.0.
+
+    Figure 7. NASA, Earth with Clouds Above the African Continent. 2021a, Digital Image. Reproduced from: Unsplash. CC0.
+
+    Figure 8. NASA, View of Earth and Satellite. 2015, Digital Image. Reproduced from: Unsplash. CC0.
+
+    Figure 9. NASA. Mars on a Black Background. 2021b, Reproduced from: Unsplash. CC0.
+
+    Figure 10. NASA, Springtime on a Polar Cliff. 2021d, Digital Image. Reproduced from: NASA. CC BY 4.0.
+    
+    Figure 11. NASA, Hubble's New Portrait of Jupiter. 2019a, Digital Image. Reproduced from: NASA. CC BY 4.0.
+
+    Figure 12. NASA, Jupiter's Great Red Spot in True Color. 2017, Digital Image. Reproduced from: NASA. CC BY 4.0.
+
+    Figure 13. NASA, Colorful Colossuses and Changing Hues. 2012, Digital Image. Reproduced from: NASA. CC BY 4.0.
+
+    Figure 14. NASA, The Rite of Spring. 2009, Digital Image. Reproduced from: NASA. CC BY 4.0.
+
+    Figure 15. NASA, Uranus as Seen by NASA's Voyager 2. 1986, Digital Image. Reproduced from: NASA. CC BY 4.0.
+
+    Figure 16. NASA, Color Voyager 2 Image Showing Crescent Uranus. 1998, Digital Image. Reproduced from: NASA. CC BY 4.0.
+          
+    Figure 17. NASA, Neptune on a Black Background. 2021c, Reproduced from: Unsplash. CC0.
+
+    Figure 18. NASA, Neptune. 1989, Digital Image. Reproduced from: NASA. CC BY 4.0.
+
+    Figure 19. NASA, Astronaut in Spacesuit Floating in Space. 2016, Reproduced from: Unsplash. CC0.
+
+    Figure 20. Neven Krcmarek, Full moon. 2016, Reproduced from: Unsplash. CC0. 
+
+    Figure 21. Font Awesome, Facebook-f. 2023a, Reproduced from: Font Awesome. CC BY 4.0.
+
+    Figure 22. Font Awesome, Instagram. 2023b, Reproduced from: Font Awesome. CC BY 4.0.
+
+    Figure 23. Font Awesome, Twitter. 2023c, Reproduced from: Font Awesome. CC BY 4.0.
+
+    Figure 24. Boostrap, Arrow Left. n.d.-c, Digital Image. Reproduced from: Bootstrap. CC BY 3.0.
+
+    Figure 25. Boostrap, Arrow Right. n.d.-d, Digital Image. Reproduced from: Bootstrap. CC BY 3.0.
+
+    Figure 26. HiPixel, Magic Planets Icons. 2022, Digital Image. Reproduced from: Envato Elements. Envato Elements License.
+
+
+    REFERENCES
+
+    Anime. n.d. Anime. Accessed 19 August 2023. https://animejs.com/.
+
+    Becerra, Manny. 2021. “Black and White Starry Night”. Unsplash. https://unsplash.com/photos/mMUo6jghVa8. 
+
+    Berryhill, Daniel. 2021. “5 Ways to Make Labels Accessible for Input Controls and 3 Ways Not to”. Medium. Accessed 13 August 2023. https://medium.com/codex/5-ways-tomake-labels-accessible-for-input-controls-and-3-ways-not-to-55ecb2a2e80a.
+
+    Bjerrome, Tobias. n.d. “Effect 3”. Tobiasahlin. Accessed 19 August 2023. https://tobiasahlin.com/moving-letters/#3. 
+    
+    Boostrap. n.d.-a. Bootstrap. Accessed 16 August 2023. https://getbootstrap.com/.
+    
+    Boostrap. n.d.-b. "Arrow Down". Bootstrap. https://icons.getbootstrap.com/icons/arrow-down/.
+
+    Boostrap. n.d.-c. "Arrow Left". Bootstrap. https://icons.getbootstrap.com/icons/arrow-left/.
+
+    Boostrap. n.d.-d. "Arrow Right". Bootstrap. https://icons.getbootstrap.com/icons/arrow-right/. 
+
+    Font Awesome. n.d. Font Awesome. Accessed 16 August 2023. https://fontawesome.com/.
+
+    Font Awesome. 2023a. “Facebook-f”. Font Awesome. https://fontawesome.com/icons/facebook-f?f=brands&s=solid.
+
+    Font Awesome. 2023b. “Instagram”. Font Awesome. https://fontawesome.com/icons/instagram?f=brands&s=solid.
+
+    Font Awesome. 2023c. “Twitter”. Font Awesome. https://fontawesome.com/icons/twitter?f=brands&s=solid.
+
+    Gama, Natanael and Mientjes, Robin. n.d. "Exo". Google Fonts. Accessed 16 August 2023. https://fonts.google.com/specimen/Exo. 
+
+    HiPixel. 2022. “Magic Planets Icon”. Envato Elements. https://unsplash.com/photos/mMUo6jghVa8. 
+
+    KarsusITA. 2022. “Flickering on Upward Scrolling #406”. GitHub. 9 March 2022. https://github.com/locomotivemtl/locomotive-scroll/issues/406. 
+    
+    Krcmarek, Neven. 2016. "Full Moon". Unsplash. https://unsplash.com/photos/9dTg44Qhx1Q. 
+
+    Locomotive. n.d. Locomotive. Accessed 16 August 2023. https://github.com/locomotivemtl/locomotive-scroll.
+
+    MikeHantha. 2022. "Fix for Height Update when Dom Elements Change Height #408". GitHub. 15 March 2022. https://github.com/locomotivemtl/locomotive-scroll/issues/408. 
+
+    mykt0ngc0. 2022. "Anchor Link Does Not Work With Scroll Locomotive #175". GitHub. 30 March 2022. https://github.com/locomotivemtl/locomotive-scroll/issues/175. 
+
+    NASA. 1986. "Uranus as Seen by NASA's Voyager 2". NASA. https://solarsystem.nasa.gov/resources/599/uranus-as-seen-by-nasas-voyager-2/?category=planets_uranus.
+
+    NASA. 1989. "Neptune". NASA. https://solarsystem.nasa.gov/resources/842/neptune-august-31-1989/?category=planets_neptune. 
+
+    NASA. 1998. "Color Voyager 2 Image Showing Crescent Uranus". NASA. https://solarsystem.nasa.gov/resources/604/color-voyager-2-image-showing-crescent-uranus/?category=planets_uranus.
+
+    NASA. 2009. "The Rite of Spring". NASA. https://solarsystem.nasa.gov/resources/658/the-rite-of-spring/?category=planets_saturn.
+
+    NASA. 2012. "Colorful Colossuses and Changing Hues". NASA. https://solarsystem.nasa.gov/resources/179/colorful-colossuses-and-changing-hues/?category=planets_saturn.
+
+    NASA. 2015. "View of Earth and Satellite". Unsplash. https://unsplash.com/photos/yZygONrUBe8.  
+
+    NASA. 2016. "Astronaut in Spacesuit Floating in Space". Unsplash. https://unsplash.com/photos/Yj1M5riCKk4.  
+
+    NASA. 2017. "Jupiter's Great Red Spot in True Color". NASA. https://solarsystem.nasa.gov/resources/626/jupiters-great-red-spot-in-true-color/?category=planets_jupiter.
+
+    NASA. 2018a. "Colors of the Innermost Planet: View 1". NASA. https://solarsystem.nasa.gov/resources/771/colors-of-the-innermost-planet-view-1/?category=planets_mercury. 
+
+    NASA. 2018b. "Venus - 3-D Perspective View of Sapas Mons". NASA. https://solarsystem.nasa.gov/resources/774/venus-3-d-perspective-view-of-sapas-mons/?category=planets_venus. 
+
+    NASA. 2018c. "Venus - Computer Simulated Global View of the Northern Hemisphere". NASA. https://solarsystem.nasa.gov/resources/775/venus-computer-simulated-global-view-of-the-northern-hemisphere/?category=planets_venus.   
+
+    NASA. 2019a. "Hubble's New Portrait of Jupiter". NASA. https://solarsystem.nasa.gov/resources/2486/hubbles-new-portrait-of-jupiter/?category=planets_jupiter.
+
+    NASA. 2019b. "Mercury's Caloris Basin". NASA. https://solarsystem.nasa.gov/resources/2266/mercurys-caloris-basin/?category=planets_mercury. 
+
+    NASA. 2021a. "Earth With Clouds Above the African Continent". Unsplash. https://unsplash.com/photos/vhSz50AaFAs.  
+
+    NASA. 2021b. "Mars on a Black Background". Unsplash. https://unsplash.com/photos/N3BQHYOVq5E. 
+
+    NASA. 2021c. "Neptune on a Black Background". Unsplash. https://unsplash.com/photos/ScBkW9AKgcA.
+
+    NASA. 2021d. "Springtime on a Polar Cliff". NASA. https://solarsystem.nasa.gov/resources/2631/springtime-on-a-polar-cliff/?category=planets_mars.
+
+    NASA. 2023a. "Mercury". NASA. Accessed 13 August 2023. https://solarsystem.nasa.gov/planets/mercury/overview/.
+
+    NASA. 2023b. "Venus". NASA. Accessed 13 August 2023. https://solarsystem.nasa.gov/planets/venus/overview/.
+
+    NASA. 2023c. "Earth". NASA. Accessed 13 August 2023. https://solarsystem.nasa.gov/planets/earth/overview/.
+
+    NASA. 2023d. "Mars". NASA. Accessed 13 August 2023. https://solarsystem.nasa.gov/planets/mars/overview/.
+
+    NASA. 2023e. "Jupiter". NASA. Accessed 13 August 2023. https://solarsystem.nasa.gov/planets/jupiter/overview/. 
+
+    NASA. 2023f. “Saturn”. NASA. Accessed 4 August 2023. https://solarsystem.nasa.gov/planets/saturn/overview/.
+
+    NASA. 2023g. “Uranus”. NASA. Accessed 4 August 2023. https://solarsystem.nasa.gov/planets/uranus/overview/.
+
+    NASA. 2023h. “Neptune”. NASA. Accessed 4 August 2023. https://solarsystem.nasa.gov/planets/neptune/overview/.
+
+    Shoelace. n.d. Shoelace. Accessed 16 August 2023. https://shoelace.style/.
+
+    Splide. n.d. Splide. Accessed 16 August 2023. https://splidejs.com/.
+-->
+
+</html>
