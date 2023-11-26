@@ -6,8 +6,8 @@
 
 :arrow_right: [Click to see the website live](https://carellerichards.github.io/cosmos-agency/)
 
-![space3](https://github.com/CarelleRichards/cosmos-agency/assets/137973963/93286d28-29b9-4263-af8a-4070bc503aaf)
+<img src="https://github.com/CarelleRichards/cosmos-agency/assets/137973963/93286d28-29b9-4263-af8a-4070bc503aaf" width="700"><br>
 
-![Space2](https://github.com/CarelleRichards/cosmos-agency/assets/137973963/5e2ea50f-a386-4d8e-86bb-d9bcfc64ebe7)
+<img src="https://github.com/CarelleRichards/cosmos-agency/assets/137973963/5e2ea50f-a386-4d8e-86bb-d9bcfc64ebe7" width="700"><br>
 
-![Space1](https://github.com/CarelleRichards/cosmos-agency/assets/137973963/f2df7838-d8bc-476e-8093-45c59efbe898)
+<img src="https://github.com/CarelleRichards/cosmos-agency/assets/137973963/f2df7838-d8bc-476e-8093-45c59efbe898" width="700"><br>
